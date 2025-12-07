@@ -89,9 +89,7 @@
             <label class="form-group__label product-detail__description-label">
                 商品説明
             </label>
-            <textarea name="description" class="form-group__textarea product-detail__description-textarea" placeholder="商品説明を入力してください">
-                {{ old('description', $product->description) }}
-            </textarea>
+            <textarea name="description" class="form-group__textarea product-detail__description-textarea" placeholder="商品説明を入力してください">{{ old('description', $product->description) }}</textarea>
             @error('description')
                 <p class="form-group__error">{{ $message }}</p>
             @enderror
