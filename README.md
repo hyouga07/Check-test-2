@@ -33,18 +33,23 @@ php artisan migrate
 php artisan db:seed
 ```
 
-URL
-・商品一覧ページ: http://localhost/products
-・商品登録ページ: http://localhost/products/register
-・phpMyAdmin： http://localhost:8080/
+8. シンボリックリンク
+``` bash
+php artisan storage:link
+```
 
-使用技術(実行環境)
-・PHP 8.x
-・Laravel 9.x
-・Composer 2.x
-・MySQL8.0.26
-・Nginx1.21.1
+## URL
+- 商品一覧ページ: http://localhost/products
+- 商品登録ページ: http://localhost/products/register
+- phpMyAdmin： http://localhost:8080/
 
-ER 図
+## 使用技術(実行環境)
+- PHP 8.x
+- Laravel 9.x
+- Composer 2.x
+- MySQL8.0.26
+- Nginx1.21.1
+
+## ER 図
 画像だと透過でER図が見えなかったので 作成元の.drawio.pug もファイルに入れています
 Draw.io Extension for VSCode を VSCode 内にインストールして確認してください
