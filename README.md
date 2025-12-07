@@ -1,15 +1,37 @@
-Docker ビルド
-・git clone https://github.com/hyouga07/Check-test-2.git
-・docker-compose up -d --build
+# もぎたて
 
-Laravel 環境構築
-・docker-compose exec php bash
-・composer install
-・cp .env.example .env、開発変数を適宜変更
-・php artisan key:generate
-・php artisan migrate
-・php artisan db:seed
-・php artisan storage:link
+## 環境構築
+**Docker ビルド**
+1. `git clone https://github.com/hyouga07/Check-test-2.git`
+2. `docker-compose up -d --build`
+
+**Laravel環境構築**
+1. `docker-compose exec php bash`
+2. `composer install`
+3. 「.env.example」ファイルを 「.env」ファイルに命名を変更。または、新しく.envファイルを作成
+4. .envに以下の環境変数を追加
+``` text
+DB_CONNECTION=mysql
+DB_HOST=mysql
+DB_PORT=3306
+DB_DATABASE=laravel_db
+DB_USERNAME=laravel_user
+DB_PASSWORD=laravel_pass
+```
+5. アプリケーションキーの作成
+``` bash
+php artisan key:generate
+```
+
+6. マイグレーションの実行
+``` bash
+php artisan migrate
+```
+
+7. シーディングの実行
+``` bash
+php artisan db:seed
+```
 
 URL
 ・商品一覧ページ: http://localhost/products
