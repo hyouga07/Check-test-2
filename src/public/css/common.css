@@ -1,0 +1,16 @@
+.header {
+    background: #f7f7f7;
+    padding: 16px 40px 0;
+}
+
+.header__inner {
+    width: auto;
+    margin: 0;
+}
+
+.header__logo {
+    font-size: 22px;
+    font-style: italic;
+    color: #f3b301;
+    letter-spacing: 1px;
+}
